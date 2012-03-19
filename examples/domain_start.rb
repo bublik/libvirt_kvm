@@ -1,14 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'libvirt'
-require 'yaml'
 
 require './configure.rb'
 
-puts "HOST : #{@config['hypervisor']['host']}"
-puts "USER : #{@config['hypervisor']['user']}"
-
-@hypervisor = @config['hypervisor']
 UUID = "93a5c045-6457-2c09-e5ff-927cdf34e17b"
 DOM_NAME = 'hw21tb33hlum1a'
 new_dom_xml = '<?xml version="1.0" encoding="UTF-8"?>
@@ -56,8 +50,7 @@ new_dom_xml = '<?xml version="1.0" encoding="UTF-8"?>
   </devices>
 </domain>
 '
-########---------------------------------------------------------------
-conn = Libvirt::open("qemu+ssh://#{@hypervisor['user']}@#{@hypervisor['host']}/system")
+
 
 ## list of inactive domain names on this connection.
 #list_defined_domains = conn.list_defined_domains

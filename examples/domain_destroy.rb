@@ -1,15 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'libvirt'
-require 'yaml'
-
 require './configure.rb'
-
-puts "HOST : #{@config['hypervisor']['host']}"
-puts "USER : #{@config['hypervisor']['user']}"
-
-@hypervisor = @config['hypervisor']
-conn = Libvirt::open("qemu+ssh://#{@hypervisor['user']}@#{@hypervisor['host']}/system")
 
 #online_domains = conn.list_domains
 #
