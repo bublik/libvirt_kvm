@@ -62,7 +62,7 @@ new_dom_xml = '<?xml version="1.0" encoding="UTF-8"?>
 # once they are stopped, libvirt forgets about them.
 puts "Creating transient domain ruby-libvirt-tester"
 begin
-  dom = conn.create_domain_xml(new_dom_xml)
+  dom = @conn.create_domain_xml(new_dom_xml)
 rescue
   dom.undefine
 end
@@ -75,7 +75,7 @@ dom.destroy
 # makes libvirt aware of the domain as a persistent entity; it does not start
 # or otherwise change the domain
 puts "Defining permanent domain ruby-libvirt-tester"
-dom = conn.define_domain_xml(new_dom_xml)
+dom = @conn.define_domain_xml(new_dom_xml)
 
 # start the domain
 puts "Starting permanent domain ruby-libvirt-tester"
@@ -86,7 +86,7 @@ sleep 2
 puts "Domain name: #{dom.name}"
 puts "Domain info: #{dom.info.inspect}"
 puts "ACTIVE ? " + dom.active?.inspect
-puts "Active domains: #{conn.list_domains}.inspect"
+puts "Active domains: #{@conn.list_domains}.inspect"
 
 
 begin
@@ -109,6 +109,6 @@ puts "Domain info after destroy: #{dom.info.inspect}"
 puts "Undefining permanent domain ruby-libvirt-tester"
 dom.undefine
 
-conn.close
+@conn.close
 
 
