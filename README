@@ -1,1 +1,26 @@
 gem install ruby-libvirt
+
+*Hypervisor requirements*
+
+ bridge-utils
+ module-init-tools
+ iproute
+ dnsmasq >= 2.41
+ radvd (if using IPv6)
+ iptables
+ iptables-ipv6 (if using IPv6)
+ ebtables (if using libvirt's nwfilter)
+
+
+*Configure libvirtd on HV*
+
+file /etc/libvirt/libvirtd.conf
+# Disable CA authorization
+listen_tls = 0
+
+
+file /etc/sysconfig/libvirtd
+#uncomment this line
+LIBVIRTD_ARGS="--listen"
+
+service libvird restart
