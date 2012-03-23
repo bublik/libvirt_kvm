@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e140b26-347a-424f-9418-91ed9b425aa1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libvirt_kvm.iml" afterPath="$PROJECT_DIR$/.idea/libvirt_kvm.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/dom_stats.rb" afterPath="$PROJECT_DIR$/examples/dom_stats.rb" />
     </list>
     <ignored path="libvirt_kvm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="24" selection-start="21" selection-end="36" vertical-scroll-proportion="0.0">
+            <state line="1" column="23" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
       <file leaf-file-name="dom_stats.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/dom_stats.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="58" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+            <state line="4" column="18" selection-start="65" selection-end="83" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -47,7 +48,7 @@
       <file leaf-file-name="domain_start.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/domain_start.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="66" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+            <state line="68" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,16 +57,34 @@
       <file leaf-file-name="hot_resize.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/hot_resize.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+            <state line="8" column="41" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="get_vnc_port.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/get_vnc_port.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="56" selection-end="64" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="54" selection-start="422" selection-end="422" vertical-scroll-proportion="0.4323725">
+            <state line="28" column="52" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.016629713">
               <folding />
             </state>
           </provider>
@@ -83,7 +102,7 @@
       <file leaf-file-name="configure.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/configure.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="53" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+            <state line="20" column="117" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/examples/config.yml" />
         <option value="$PROJECT_DIR$/examples/domain_manipulation.rb" />
         <option value="$PROJECT_DIR$/examples/configure.rb" />
         <option value="$PROJECT_DIR$/examples/connet_to_hv.rb" />
@@ -110,7 +128,10 @@
         <option value="$PROJECT_DIR$/examples/domain_start.rb" />
         <option value="$PROJECT_DIR$/examples/vms_list.rb" />
         <option value="$PROJECT_DIR$/examples/dom_stats.rb" />
+        <option value="$PROJECT_DIR$/examples/config.yml" />
         <option value="$PROJECT_DIR$/examples/hot_resize.rb" />
+        <option value="$PROJECT_DIR$/examples/get_vnc_port.rb" />
+        <option value="$PROJECT_DIR$/examples/Gemfile" />
         <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
@@ -195,6 +216,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -292,7 +318,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13020833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -380,43 +406,70 @@
         <state line="15" column="18" selection-start="363" selection-end="363" vertical-scroll-proportion="0.22362386" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/dom_stats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/domain_start.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="66" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/domain_destroy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="47" selection-end="209" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/configure.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="53" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/hot_resize.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="24" selection-start="21" selection-end="36" vertical-scroll-proportion="0.0">
+        <state line="1" column="23" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/domain_start.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/dom_stats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="65" selection-end="83" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/get_vnc_port.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="56" selection-end="64" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/configure.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="117" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/hot_resize.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="422" selection-end="422" vertical-scroll-proportion="0.4323725">
+        <state line="28" column="52" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.016629713">
           <folding />
         </state>
       </provider>

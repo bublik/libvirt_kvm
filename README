@@ -1,4 +1,6 @@
-gem install ruby-libvirt
+Gems for CP described on Gemfile
+please use bundler
+
 
 *Hypervisor requirements*
 
