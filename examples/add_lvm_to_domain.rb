@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require './configure.rb'
+
 #Install PCI Hotplug drivers in the guest (Linux)
 #
 #I loaded the following modules to get pci hotplug working:
@@ -12,6 +13,7 @@ require './configure.rb'
 #for m in acpiphp pci_hotplug; do sudo modprobe ${m}; done
 
 begin
+  puts "READ: http://www.linux-kvm.org/page/Virtio"
   puts "READ hot plug devices http://www.linux-kvm.org/page/Hotadd_pci_devices"
   domain_name = 'ws5x2wcb4p3pnz'
 
@@ -45,6 +47,12 @@ begin
   #  <alias name='ide0-0-1'/>
   # <address type='drive' controller='0' bus='0' unit='1'/>
   #</disk>
+
+  # Hot attach can be scsi or virtio
+  #<target dev='sdb' bus='scsi'/>
+
+  # <target dev='hdc' bus='virtio'/>
+  # /dev/vd[a-z][1-9]
 test_lv ="<disk type='block' device='disk'>
   <driver name='qemu' type='raw'/>
   <source dev='/dev/onapp-v1vgz2q0yevwzt/test.img'/>

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require './configure.rb'
-
+puts "After add VG libvirt will create XML config file  /etc/libvirt/storage/onapp-v1vgz2q0yevwzt.xml"
 # this program demonstrates the use of the libvirt storage APIs.  In particular
 # it demonstrates directory pool creation, volume creation, and teardown.
 # libvirt supports many other kinds of storage pools, including iSCSI, NFS,
