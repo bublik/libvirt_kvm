@@ -26,3 +26,9 @@ file /etc/sysconfig/libvirtd
 LIBVIRTD_ARGS="--listen"
 
 service libvird restart
+
+
+
+# libvirt 0.9.10
+Resize LV - is not presented in ruby-wrapper
+virStorageVolResize() API (Zeeshan Ali (Khattak))

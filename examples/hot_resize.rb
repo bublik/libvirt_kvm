@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+#NOT WORKED EXAMPLE
 
 require './configure.rb'
 
