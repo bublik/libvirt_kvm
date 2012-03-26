@@ -65,12 +65,12 @@ EOF
 # thinly-provisioned volume (think of a sparse file)
 storage_vol_xml = <<EOF
 <volume>
-  <name>test.img</name>
+  <name>testhv2.img</name>
   <allocation>0</allocation>
   <capacity unit="G">1</capacity>
   <format type='linux-lvm'/>
   <target>
-    <path>/dev/onapp-v1vgz2q0yevwzt/test.img</path>
+    <path>/dev/onapp-v1vgz2q0yevwzt/testhv2.img</path>
   </target>
 </volume>
 EOF
@@ -163,6 +163,7 @@ puts "  Type: #{volinfo.type}"
 puts "  Capacity: #{volinfo.capacity / 1024/1024}Mb"
 puts "  Allocation: #{volinfo.allocation / 1024/1024}Mb"
 
+exit
 #CLEAN ALL PRIVATE DATA
 # wipe the data from this storage volume. This is a destructive operation.
 puts "Start WIPE the data"

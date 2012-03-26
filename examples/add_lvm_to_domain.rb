@@ -15,7 +15,7 @@ require './configure.rb'
 begin
   puts "READ: http://www.linux-kvm.org/page/Virtio"
   puts "READ hot plug devices http://www.linux-kvm.org/page/Hotadd_pci_devices"
-  domain_name = 'ws5x2wcb4p3pnz'
+  domain_name = 'w7jtb3e0baine9'
 
   # Add test img
 #lvdisplay /dev/onapp-v1vgz2q0yevwzt/test.img
@@ -55,7 +55,7 @@ begin
   # /dev/vd[a-z][1-9]
 test_lv ="<disk type='block' device='disk'>
   <driver name='qemu' type='raw'/>
-  <source dev='/dev/onapp-v1vgz2q0yevwzt/test.img'/>
+  <source dev='/dev/onapp-v1vgz2q0yevwzt/testhv2.img'/>
   <target dev='hdc' bus='virtio'/>
   <alias name='ide0-0-2'/>
 <address type='drive' controller='0' bus='0' unit='1'/>
