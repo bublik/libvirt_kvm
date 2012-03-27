@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 require './configure.rb'
+# Very interesting article about snapshots
+# http://www.redhat.com/archives/libvir-list/2011-August/msg00361.html
 # our RAW format does not supported snapshot
 #(possible with qcow2 and qed)
 #<disk snapshot='no|external|internal' persistent='yes|no'>...</disk>
