@@ -41,3 +41,5 @@ rescue => e
 end
 
 puts "Max Memory: #{ dom.max_memory}"
+
+@conn.close

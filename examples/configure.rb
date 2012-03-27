@@ -19,7 +19,9 @@ puts "Libvirt version: #{ver[0]}"
 puts "Hypervisor Type version: #{ver[1]}"
 
 def reconnect
-  @conn = Libvirt::open("qemu+ssh://#{@hypervisor['user']}@#{@hypervisor['host']}/system")
+  if @conn.nil? || @conn.closed?
+    @conn = Libvirt::open("qemu+ssh://#{@hypervisor['user']}@#{@hypervisor['host']}/system")
+  end
 end
 
 reconnect

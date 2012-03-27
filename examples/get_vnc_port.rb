@@ -12,3 +12,4 @@ doc = Nokogiri::XML(dom.xml_desc)
 port = doc.xpath('//domain/devices/graphics').attribute('port').value
 puts "VNC port #{port}"
 
+@conn.close

@@ -19,3 +19,5 @@ puts "Shutdown"
 dom.shutdown
 
 puts "Active domains: #{@conn.list_domains}.inspect"
+
+@conn.close
