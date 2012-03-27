@@ -1,6 +1,7 @@
+All examples with comments and links to some documentation pages.
+
 Gems for CP described on Gemfile
 please use bundler
-
 
 *Hypervisor requirements*
 
@@ -32,3 +33,6 @@ service libvird restart
 # libvirt 0.9.10
 Resize LV - is not presented in ruby-wrapper
 virStorageVolResize() API (Zeeshan Ali (Khattak))
+
+*TODO*
+Add examples how libvirt jons is works
