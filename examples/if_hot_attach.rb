@@ -32,3 +32,37 @@ EOF
 dom.attach_device(interface_bridge_xml)
 puts dom.xml_desc
 dom.detach_device(interface_bridge_xml)
+
+=begin
+Supported 
+ libvirt 0.9.11
+
+http://www.redhat.com/archives/libvir-list/2012-February/msg00222.html
+
+This patch allows libvirt to add interfaces to already
+existing Open vSwitch bridges. The following syntax in
+domain XML file must be used:
+
+    <interface type='bridge'>
+      <mac address='52:54:00:d0:3f:f2'/>
+      <source bridge='ovsbr'/>
+      <virtualport type='openvswitch'>
+        <parameters interfaceid='921a80cd-e6de-5a2e-db9c-ab27f15a6e1d'/>
+      </virtualport>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </interface>
+
+or if libvirt should auto-generate the interfaceid us following syntax:
+
+    <interface type='bridge'>
+      <mac address='52:54:00:d0:3f:f2'/>
+      <source bridge='ovsbr'/>
+      <virtualport type='openvswitch'>
+      </virtualport>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </interface>
+
+To create Open vSwitch bridge us following command:
+
+    ovs-vsctl add-br ovsbr
+=end
